@@ -17,8 +17,14 @@ export default function Main() {
       <div className="main_content">
         <p>Tomorrow is Today</p>
         <div className="ImgContent">
-          <img className="humanImg" src={lady} alt="" srcset="" />
-          <img className="humanImg" src={man} alt="" srcset="" />
+          <div className="image_container">
+            <h1 className="image_title">Global</h1>
+            <img className="humanImg" src={lady} alt="" srcset="" />
+          </div>
+          <div className="image_container">
+            <h1 className="image_title">Street</h1>
+            <img className="humanImg" src={man} alt="" srcset="" />
+          </div>
         </div>
       </div>
       <Footer />

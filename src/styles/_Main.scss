@@ -29,10 +29,37 @@
   align-items: center;
   text-align: center;
   flex-direction: column;
+  transition: 200ms ease-in;
 }
 
 .ImgContent {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.image_container {
+  position: relative;
+  display: inline-block;
+}
+
+.image_title {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: $textColor;
+  text-shadow: 1px 1px #000;
+}
+
+@media screen and (max-width: 874px) {
+  .main_content {
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .ImgContent {
+    flex-direction: column;
+  }
 }
