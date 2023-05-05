@@ -20,11 +20,11 @@ export default function Main() {
         <p>Tomorrow is Today</p>
         <div className="ImgContent">
           <NavLink className="image_container" to="./global">
-            <h1 className="image_title">Global</h1>
+            <h3 className="image_title">Global</h3>
             <img className="humanImg" src={lady} alt="" />
           </NavLink>
           <NavLink className="image_container" to="./street">
-            <h1 className="image_title">Street</h1>
+            <h3 className="image_title">Street</h3>
             <img className="humanImg" src={man} alt="" />
           </NavLink>
         </div>

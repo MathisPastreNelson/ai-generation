@@ -29,7 +29,8 @@ p {
 @media screen and (max-width: 874px) {
   .humanImg {
     margin: 0.5rem 0;
-    width: 55%;
+    width: 60%;
+    max-width: 600px;
   }
 }
 header {
@@ -95,7 +96,7 @@ header {
 
 .image_title {
   position: absolute;
-  top: 80%;
+  bottom: 5%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
@@ -130,6 +131,9 @@ header {
   }
   .ImgContent {
     flex-direction: column;
+  }
+  .image_title {
+    font-size: 15px;
   }
 }
 footer {
