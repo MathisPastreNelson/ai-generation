@@ -6,21 +6,45 @@ body {
   margin: 0;
 }
 
+h1,
+h2 {
+  font-family: "Audiowide", cursive;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Syncopate", sans-serif;
+}
+
+p {
+  font-family: "Corben", cursive;
+}
+
+.humanImg {
+  width: 40%;
+}
+
 header {
-  background-color: grey;
+  background-color: rgba(0, 0, 0, 0.293);
+  color: rgba(255, 255, 255, 0.897);
   text-align: center;
-  height: 15vh;
+  height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 2;
+  width: 100%;
 }
 
 .main {
-  height: 70vh;
+  height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   position: relative;
+  flex-direction: column;
 }
 
 #myVideo {
@@ -35,15 +59,33 @@ header {
 }
 
 .main_content {
-  color: white;
+  background-color: rgba(0, 0, 0, 0.293);
+  color: rgba(255, 255, 255, 0.897);
   z-index: 1;
+  width: 80%;
+  max-width: 1600px;
+  height: 60vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.ImgContent {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 footer {
-  background-color: grey;
+  background-color: rgba(0, 0, 0, 0.293);
+  color: rgba(255, 255, 255, 0.897);
   text-align: center;
-  height: 15vh;
+  height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  z-index: 2;
 }/*# sourceMappingURL=index.css.map */

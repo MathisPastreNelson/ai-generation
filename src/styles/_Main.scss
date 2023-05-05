@@ -1,9 +1,10 @@
 .main {
-  height: 70vh;
+  height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   position: relative;
+  flex-direction: column;
 }
 
 #myVideo {
@@ -17,6 +18,21 @@
 }
 
 .main_content {
-  color: white;
+  background-color: $colorbg1;
+  color: $textColor;
   z-index: 1;
+  width: 80%;
+  max-width: 1600px;
+  height: 60vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.ImgContent {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }

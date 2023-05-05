@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer() {
   return (
     <footer>
-      <h2>Footer</h2>
+      <h3>© Mathis</h3>
     </footer>
   );
 }
