@@ -1,0 +1,32 @@
+body {
+  background-color: salmon;
+}
+
+* {
+  margin: 0;
+}
+
+header {
+  background-color: grey;
+  text-align: center;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: grey;
+  text-align: center;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=index.css.map */
