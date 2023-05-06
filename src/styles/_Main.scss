@@ -19,7 +19,6 @@
 
 .main_content {
   background-color: $colorbg1;
-  color: $textColor;
   z-index: 1;
   width: 80%;
   max-width: 1600px;
@@ -30,6 +29,11 @@
   text-align: center;
   flex-direction: column;
   transition: 200ms ease-in;
+}
+
+.title_main_content {
+  font-size: 25px;
+  color: $textColor;
 }
 
 .ImgContent {
@@ -51,14 +55,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  color: $textColor;
-  text-shadow: 1px 1px #000;
-  opacity: 0;
-  filter: brightness(0);
   padding: 0.25rem;
   transition: 400ms ease-out;
   border-radius: 10px;
-  width: 40%;
+  color: $textColor;
+  background-color: $colorbg2;
+  width: 30%;
+  opacity: 1;
 }
 
 .image_container:hover {
@@ -67,9 +70,8 @@
 }
 
 .image_container:hover > .image_title {
-  opacity: 1;
+  opacity: 0;
   filter: brightness(1.1);
-  background-color: $colorbg2;
 }
 
 @media screen and (max-width: 874px) {

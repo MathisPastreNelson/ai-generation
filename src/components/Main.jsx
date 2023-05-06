@@ -17,7 +17,7 @@ export default function Main() {
       </video>
 
       <div className="main_content">
-        <p>Tomorrow is Today</p>
+        <p className="title_main_content">Tomorrow is Today</p>
         <div className="ImgContent">
           <NavLink className="image_container" to="./global">
             <h3 className="image_title">Global</h3>
