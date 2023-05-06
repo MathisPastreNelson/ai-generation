@@ -1,12 +1,12 @@
 import React from "react";
 // import Header from "../components/Header";
-import GlobalContent from "../components/GlobalContent";
+import StreetContent from "../components/StreetContent";
 // import Footer from "../components/Footer";
 
-export default function Global() {
+export default function Street() {
   return (
     <div>
-      <GlobalContent />
+      <StreetContent />
     </div>
   );
 }
