@@ -9,31 +9,38 @@
   margin: 1rem 0;
 }
 
+.global_Container_title {
+  color: $textColor;
+  background-color: $colorbg1;
+  padding: 1rem 0;
+  margin: 1rem 0;
+  width: 100%;
+  text-align: center;
+}
+
 .imgCity_Global_Container {
   width: 100%;
 }
 
+.carouselMegaBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 .buttonBox_carousel_Global {
-  margin: 1rem 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.buttonBox_carousel_Global > * {
-  color: $textColor;
-  width: 30%;
-  padding: 1rem 2rem;
-  background-color: $colorbg1;
-  border-radius: 10px;
-  border: 0;
-}
-
 .imgCity_Global {
-  width: 50%;
+  width: 45%;
   object-position: 50% 50%;
   object-fit: cover;
+  margin-bottom: 1rem;
 }
 
 .imgBigGlobal_Container {
@@ -46,13 +53,27 @@
   width: 45%;
   height: 60vh;
   object-fit: cover;
-  margin: 1rem 0;
+}
+
+.imgSmallGlobal_Container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.imgSmallGlobal {
+  width: 45%;
+}
+
+.imgSmallGlobal1 {
+  margin-bottom: 1rem;
 }
 
 .backToIndex {
   color: $textColor;
   text-decoration: none;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   padding: 1rem 2rem;
   background-color: $colorbg1;
   border-radius: 10px;
@@ -71,8 +92,24 @@
     flex-direction: column;
   }
 
+  .carouselMegaBox {
+    flex-direction: column;
+  }
+
   .imgBigGlobal {
     width: 80%;
+  }
+
+  .imgBigGlobal1 {
+    margin-bottom: 1rem;
+  }
+
+  .imgSmallGlobal {
+    width: 80%;
+  }
+
+  .imgSmallGlobal2 {
+    margin-top: 1rem;
   }
 
   .buttonBox_carousel_Global > * {

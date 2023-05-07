@@ -4,8 +4,6 @@ import {
   CarouselProvider,
   Slider,
   Slide,
-  ButtonBack,
-  ButtonNext,
   ImageWithZoom,
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
@@ -14,7 +12,6 @@ import background from "../assets/videos/GirlInCity.mp4";
 import Header from "./Header";
 import Footer from "./Footer";
 
-import img1 from "../assets/imagesSmall/citySky-small.png";
 import img2 from "../assets/imagesSmall/citySky2-small.png";
 import img3 from "../assets/imagesSmall/citySky3-small.png";
 import img4 from "../assets/imagesLarge/orignal3.jpeg";
@@ -26,6 +23,11 @@ import img9 from "../assets/imagesLarge/street3.png";
 
 import imgbig1 from "../assets/imagesLarge/orignal1.jpeg";
 import imgbig2 from "../assets/imagesLarge/orignal2.png";
+
+import lady1 from "../assets/imagesSmall/lady1.png";
+import lady2 from "../assets/imagesSmall/lady2.png";
+import lady3 from "../assets/imagesSmall/lady3.png";
+import lady4 from "../assets/imagesSmall/lady4.png";
 
 export default function GlobalContent() {
   const [isPlaying, setIsPlaying] = useState(true);
@@ -51,99 +53,104 @@ export default function GlobalContent() {
       </video>
 
       <div className="global">
-        <CarouselProvider
-          naturalSlideWidth={500}
-          naturalSlideHeight={500}
-          interval={2000}
-          totalSlides={9}
-          className="imgCity_Global"
-          isPlaying={!isPaused && isPlaying}>
-          <div className="buttonBox_carousel_Global">
-            <ButtonBack>Back</ButtonBack>
-            <button onClick={handlePauseClick}>
-              {isPaused ? "Play" : "Pause"}
-            </button>
-            <ButtonNext>Next</ButtonNext>
-          </div>
-          <Slider>
-            <Slide index={0}>
-              <ImageWithZoom
-                src={img1}
-                alt=""
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
-              />
-            </Slide>
-            <Slide index={1}>
-              <ImageWithZoom
-                src={img2}
-                alt=""
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
-              />
-            </Slide>
-            <Slide index={2}>
-              <ImageWithZoom
-                src={img3}
-                alt=""
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
-              />
-            </Slide>
+        <h3 className="global_Container_title">Explore Future</h3>
+        <div className="carouselMegaBox">
+          <CarouselProvider
+            naturalSlideWidth={500}
+            naturalSlideHeight={500}
+            interval={2000}
+            totalSlides={4}
+            className="imgCity_Global"
+            isPlaying={!isPaused && isPlaying}>
+            <Slider>
+              <Slide index={0}>
+                <ImageWithZoom
+                  src={img2}
+                  alt=""
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                />
+              </Slide>
+              <Slide index={1}>
+                <ImageWithZoom
+                  src={img3}
+                  alt=""
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                />
+              </Slide>
 
-            <Slide index={3}>
-              <ImageWithZoom
-                src={img4}
-                alt=""
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
-              />
-            </Slide>
-            <Slide index={4}>
-              <ImageWithZoom
-                src={img5}
-                alt=""
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
-              />
-            </Slide>
-            <Slide index={5}>
-              <ImageWithZoom
-                src={img6}
-                alt=""
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
-              />
-            </Slide>
-            <Slide index={6}>
-              <ImageWithZoom
-                src={img7}
-                alt=""
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
-              />
-            </Slide>
-            <Slide index={7}>
-              <ImageWithZoom
-                src={img8}
-                alt=""
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
-              />
-            </Slide>
-            <Slide index={8}>
-              <ImageWithZoom
-                src={img9}
-                alt=""
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
-              />
-            </Slide>
-          </Slider>
-        </CarouselProvider>
+              <Slide index={2}>
+                <ImageWithZoom
+                  src={img4}
+                  alt=""
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                />
+              </Slide>
+              <Slide index={3}>
+                <ImageWithZoom
+                  src={img5}
+                  alt=""
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                />
+              </Slide>
+            </Slider>
+          </CarouselProvider>
+          <CarouselProvider
+            naturalSlideWidth={500}
+            naturalSlideHeight={500}
+            interval={2000}
+            totalSlides={4}
+            className="imgCity_Global"
+            isPlaying={!isPaused && isPlaying}>
+            <Slider>
+              <Slide index={0}>
+                <ImageWithZoom
+                  src={img6}
+                  alt=""
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                />
+              </Slide>
+              <Slide index={1}>
+                <ImageWithZoom
+                  src={img7}
+                  alt=""
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                />
+              </Slide>
+              <Slide index={2}>
+                <ImageWithZoom
+                  src={img8}
+                  alt=""
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                />
+              </Slide>
+              <Slide index={3}>
+                <ImageWithZoom
+                  src={img9}
+                  alt=""
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                />
+              </Slide>
+            </Slider>
+          </CarouselProvider>
+        </div>
         <div className="imgBigGlobal_Container">
-          <img className="imgBigGlobal" src={imgbig1} alt="" />
+          <img className="imgBigGlobal imgBigGlobal1" src={imgbig1} alt="" />
           <img className="imgBigGlobal" src={imgbig2} alt="" />
+        </div>
+        <h3 className="global_Container_title">Cyberpunk Style</h3>
+        <div className="imgSmallGlobal_Container">
+          <img className="imgSmallGlobal imgSmallGlobal1" src={lady1} alt="" />
+          <img className="imgSmallGlobal imgSmallGlobal1" src={lady2} alt="" />
+          <img className="imgSmallGlobal" src={lady3} alt="" />
+          <img className="imgSmallGlobal imgSmallGlobal2" src={lady4} alt="" />
         </div>
         <NavLink className="backToIndex" to="../ai-generation">
           <p>Retour</p>
