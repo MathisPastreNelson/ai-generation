@@ -21,6 +21,8 @@ import img7 from "../assets/imagesLarge/street1.png";
 import img8 from "../assets/imagesLarge/street2.png";
 import img9 from "../assets/imagesLarge/street3.png";
 
+import icon from "../assets/icons/FemaleIcon.png";
+
 import imgbig1 from "../assets/imagesLarge/orignal1.jpeg";
 import imgbig2 from "../assets/imagesLarge/orignal2.png";
 
@@ -58,7 +60,7 @@ export default function GlobalContent() {
           <CarouselProvider
             naturalSlideWidth={500}
             naturalSlideHeight={500}
-            interval={2000}
+            interval={1000}
             totalSlides={4}
             className="imgCity_Global"
             isPlaying={!isPaused && isPlaying}>
@@ -101,7 +103,7 @@ export default function GlobalContent() {
           <CarouselProvider
             naturalSlideWidth={500}
             naturalSlideHeight={500}
-            interval={2000}
+            interval={1000}
             totalSlides={4}
             className="imgCity_Global"
             isPlaying={!isPaused && isPlaying}>
@@ -145,7 +147,10 @@ export default function GlobalContent() {
           <img className="imgBigGlobal imgBigGlobal1" src={imgbig1} alt="" />
           <img className="imgBigGlobal" src={imgbig2} alt="" />
         </div>
-        <h3 className="global_Container_title">Cyberpunk Style</h3>
+        <h3 className="global_Container_title">
+          Cyberpunk Style
+          <img className="iconGender" src={icon} alt="" />
+        </h3>
         <div className="imgSmallGlobal_Container">
           <img className="imgSmallGlobal imgSmallGlobal1" src={lady1} alt="" />
           <img className="imgSmallGlobal imgSmallGlobal1" src={lady2} alt="" />

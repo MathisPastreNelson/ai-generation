@@ -10,6 +10,8 @@ import video2 from "../assets/videos/StreetTimeLapse.mp4";
 import video3 from "../assets/videos/GirlInCity.mp4";
 import video4 from "../assets/videos/Quartier.mp4";
 
+import icon from "../assets/icons/MaleIcon.png";
+
 import man1 from "../assets/imagesSmall/man1.png";
 import man2 from "../assets/imagesSmall/man2.png";
 import man3 from "../assets/imagesSmall/man3.png";
@@ -39,7 +41,10 @@ export default function StreetContent() {
             <source src={video4} type="video/mp4" />
           </video>
         </div>
-        <h3 className="global_Container_title">Cyberpunk Style</h3>
+        <h3 className="global_Container_title">
+          Cyberpunk Style
+          <img className="iconGender" src={icon} alt="" />
+        </h3>
         <div className="imgSmallGlobal_Container">
           <img className="imgSmallGlobal imgSmallGlobal1" src={man1} alt="" />
           <img className="imgSmallGlobal imgSmallGlobal1" src={man2} alt="" />
