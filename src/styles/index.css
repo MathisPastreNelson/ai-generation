@@ -4,6 +4,7 @@ body {
 
 * {
   margin: 0;
+  font-family: "Corben", cursive;
 }
 
 h1,
@@ -16,10 +17,6 @@ h4,
 h5,
 h6 {
   font-family: "Syncopate", sans-serif;
-}
-
-p {
-  font-family: "Corben", cursive;
 }
 
 .humanImg {
@@ -47,7 +44,7 @@ header {
 }
 
 .main {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -137,6 +134,66 @@ header {
   }
   .image_title {
     font-size: 15px;
+  }
+}
+.global {
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.408);
+  width: 80%;
+  margin: 1rem 0;
+}
+
+.imgCity_Global_Container {
+  width: 100%;
+}
+
+.buttonBox_carousel_Global {
+  margin: 1rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttonBox_carousel_Global > * {
+  color: rgba(255, 255, 255, 0.948);
+  width: 30%;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.408);
+  border-radius: 10px;
+  border: 0;
+}
+
+.imgCity_Global {
+  width: 50%;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.backToIndex {
+  color: rgba(255, 255, 255, 0.948);
+  text-decoration: none;
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.408);
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 874px) {
+  .global {
+    width: 100%;
+  }
+  .imgCity_Global {
+    width: 80%;
+  }
+  .buttonBox_carousel_Global > * {
+    padding: 1rem 0rem;
   }
 }
 footer {

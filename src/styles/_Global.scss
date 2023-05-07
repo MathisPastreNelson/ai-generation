@@ -1,0 +1,60 @@
+.global {
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $colorbg1;
+  width: 80%;
+  margin: 1rem 0;
+}
+
+.imgCity_Global_Container {
+  width: 100%;
+}
+
+.buttonBox_carousel_Global {
+  margin: 1rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttonBox_carousel_Global > * {
+  color: $textColor;
+  width: 30%;
+  padding: 1rem 2rem;
+  background-color: $colorbg1;
+  border-radius: 10px;
+  border: 0;
+}
+
+.imgCity_Global {
+  width: 50%;
+  object-position: 50% 50%;
+  object-fit: cover;
+}
+
+.backToIndex {
+  color: $textColor;
+  text-decoration: none;
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+  background-color: $colorbg1;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 874px) {
+  .global {
+    width: 100%;
+  }
+
+  .imgCity_Global {
+    width: 80%;
+  }
+
+  .buttonBox_carousel_Global > * {
+    padding: 1rem 0rem;
+  }
+}
