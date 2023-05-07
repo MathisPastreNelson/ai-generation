@@ -176,10 +176,24 @@ header {
      object-fit: cover;
 }
 
+.imgBigGlobal_Container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.imgBigGlobal {
+  width: 45%;
+  height: 60vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 1rem 0;
+}
+
 .backToIndex {
   color: rgba(255, 255, 255, 0.948);
   text-decoration: none;
-  margin: 1rem 0;
+  margin-bottom: 1rem;
   padding: 1rem 2rem;
   background-color: rgba(0, 0, 0, 0.408);
   border-radius: 10px;
@@ -190,6 +204,12 @@ header {
     width: 100%;
   }
   .imgCity_Global {
+    width: 80%;
+  }
+  .imgBigGlobal_Container {
+    flex-direction: column;
+  }
+  .imgBigGlobal {
     width: 80%;
   }
   .buttonBox_carousel_Global > * {

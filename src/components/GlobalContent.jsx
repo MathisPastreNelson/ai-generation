@@ -24,6 +24,9 @@ import img7 from "../assets/imagesLarge/street1.png";
 import img8 from "../assets/imagesLarge/street2.png";
 import img9 from "../assets/imagesLarge/street3.png";
 
+import imgbig1 from "../assets/imagesLarge/orignal1.jpeg";
+import imgbig2 from "../assets/imagesLarge/orignal2.png";
+
 export default function GlobalContent() {
   const [isPlaying, setIsPlaying] = useState(true);
   const [isPaused, setIsPaused] = useState(false);
@@ -138,6 +141,10 @@ export default function GlobalContent() {
             </Slide>
           </Slider>
         </CarouselProvider>
+        <div className="imgBigGlobal_Container">
+          <img className="imgBigGlobal" src={imgbig1} alt="" />
+          <img className="imgBigGlobal" src={imgbig2} alt="" />
+        </div>
         <NavLink className="backToIndex" to="../ai-generation">
           <p>Retour</p>
         </NavLink>
