@@ -4,21 +4,12 @@ import Loader from "../components/Loader";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
-  const [delayed, setDelayed] = useState(false);
 
   useEffect(() => {
-    const timeout = setTimeout(() => {
-      setDelayed(true);
-    }, 2000);
-
-    return () => clearTimeout(timeout);
-  }, []);
-
-  useEffect(() => {
-    if (loading && delayed) {
+    window.addEventListener("load", () => {
       setLoading(false);
-    }
-  }, [loading, delayed]);
+    });
+  }, []);
 
   return <div>{loading ? <Loader /> : <Main />}</div>;
 }
