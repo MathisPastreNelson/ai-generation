@@ -49,7 +49,7 @@ export default function Home() {
       // Vérifier si la durée minimale est atteinte avant de mettre à jour l'état
       setTimeout(() => {
         setMinDurationReached(true);
-      }, 1500);
+      }, 1200);
     });
   }, []);
 
