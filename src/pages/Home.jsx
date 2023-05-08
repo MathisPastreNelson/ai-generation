@@ -16,9 +16,13 @@ export default function Home() {
     images.forEach((img) => {
       const promise = new Promise((resolve, reject) => {
         if (img.complete) {
+          console.log(`Image ${img.src} déjà chargée`);
           resolve();
         } else {
-          img.addEventListener("load", resolve);
+          img.addEventListener("load", () => {
+            console.log(`Image ${img.src} chargée`);
+            resolve();
+          });
           img.addEventListener("error", reject);
         }
       });
@@ -28,9 +32,13 @@ export default function Home() {
     videos.forEach((video) => {
       const promise = new Promise((resolve, reject) => {
         if (video.readyState >= 2) {
+          console.log(`Vidéo ${video.src} déjà chargée`);
           resolve();
         } else {
-          video.addEventListener("loadeddata", resolve);
+          video.addEventListener("loadeddata", () => {
+            console.log(`Vidéo ${video.src} chargée`);
+            resolve();
+          });
           video.addEventListener("error", reject);
         }
       });
@@ -41,7 +49,7 @@ export default function Home() {
       // Vérifier si la durée minimale est atteinte avant de mettre à jour l'état
       setTimeout(() => {
         setMinDurationReached(true);
-      }, 2000);
+      }, 1500);
     });
   }, []);
 
