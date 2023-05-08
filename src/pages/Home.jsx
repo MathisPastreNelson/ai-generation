@@ -4,6 +4,7 @@ import Loader from "../components/Loader";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
+  const [minDurationReached, setMinDurationReached] = useState(false);
 
   useEffect(() => {
     const images = document.querySelectorAll("img");
@@ -37,9 +38,19 @@ export default function Home() {
     });
 
     Promise.all(promises).then(() => {
-      setLoading(false);
+      // Vérifier si la durée minimale est atteinte avant de mettre à jour l'état
+      setTimeout(() => {
+        setMinDurationReached(true);
+      }, 2000);
     });
   }, []);
+
+  useEffect(() => {
+    // Mettre à jour l'état loading si la durée minimale est atteinte
+    if (minDurationReached) {
+      setLoading(false);
+    }
+  }, [minDurationReached]);
 
   return <div>{loading ? <Loader /> : <Main />}</div>;
 }
