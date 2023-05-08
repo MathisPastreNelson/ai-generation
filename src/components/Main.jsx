@@ -8,6 +8,8 @@ import Header from "./Header";
 import lady from "../assets/imagesSmall/lady.png";
 import man from "../assets/imagesSmall/man.png";
 
+import { Fade, Slide } from "react-awesome-reveal";
+
 export default function Main() {
   return (
     <div className="main">
@@ -17,16 +19,21 @@ export default function Main() {
       </video>
 
       <div className="main_content">
-        <p className="title_main_content">Tomorrow is Today</p>
+        <Slide duration="500">
+          <p className="title_main_content">Tomorrow is Today</p>
+        </Slide>
         <div className="ImgContent">
-          <NavLink className="image_container" to="./global">
-            <h3 className="image_title">Global</h3>
-            <img className="humanImg" src={lady} alt="" />
-          </NavLink>
-          <NavLink className="image_container" to="./street">
-            <h3 className="image_title">Street</h3>
-            <img className="humanImg" src={man} alt="" />
-          </NavLink>
+          <Fade duration="1500" cascade>
+            <NavLink className="image_container" to="./global">
+              <h3 className="image_title">Global</h3>
+              <img className="humanImg" src={lady} alt="" />
+            </NavLink>
+
+            <NavLink className="image_container" to="./street">
+              <h3 className="image_title">Street</h3>
+              <img className="humanImg" src={man} alt="" />
+            </NavLink>
+          </Fade>
         </div>
       </div>
       <Footer />

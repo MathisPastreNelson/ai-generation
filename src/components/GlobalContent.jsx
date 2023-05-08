@@ -8,6 +8,8 @@ import {
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 
+import { Flip, Fade } from "react-awesome-reveal";
+
 import background from "../assets/videos/GirlInCity.mp4";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -65,39 +67,41 @@ export default function GlobalContent() {
             className="imgCity_Global"
             isPlaying={!isPaused && isPlaying}>
             <Slider>
-              <Slide index={0}>
-                <ImageWithZoom
-                  src={img2}
-                  alt=""
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave}
-                />
-              </Slide>
-              <Slide index={1}>
-                <ImageWithZoom
-                  src={img3}
-                  alt=""
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave}
-                />
-              </Slide>
+              <Fade duration="800" triggerOnce={true}>
+                <Slide index={0}>
+                  <ImageWithZoom
+                    src={img2}
+                    alt=""
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                  />
+                </Slide>
+                <Slide index={1}>
+                  <ImageWithZoom
+                    src={img3}
+                    alt=""
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                  />
+                </Slide>
 
-              <Slide index={2}>
-                <ImageWithZoom
-                  src={img4}
-                  alt=""
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave}
-                />
-              </Slide>
-              <Slide index={3}>
-                <ImageWithZoom
-                  src={img5}
-                  alt=""
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave}
-                />
-              </Slide>
+                <Slide index={2}>
+                  <ImageWithZoom
+                    src={img4}
+                    alt=""
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                  />
+                </Slide>
+                <Slide index={3}>
+                  <ImageWithZoom
+                    src={img5}
+                    alt=""
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                  />
+                </Slide>
+              </Fade>
             </Slider>
           </CarouselProvider>
           <CarouselProvider
@@ -108,55 +112,73 @@ export default function GlobalContent() {
             className="imgCity_Global"
             isPlaying={!isPaused && isPlaying}>
             <Slider>
-              <Slide index={0}>
-                <ImageWithZoom
-                  src={img6}
-                  alt=""
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave}
-                />
-              </Slide>
-              <Slide index={1}>
-                <ImageWithZoom
-                  src={img7}
-                  alt=""
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave}
-                />
-              </Slide>
-              <Slide index={2}>
-                <ImageWithZoom
-                  src={img8}
-                  alt=""
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave}
-                />
-              </Slide>
-              <Slide index={3}>
-                <ImageWithZoom
-                  src={img9}
-                  alt=""
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave}
-                />
-              </Slide>
+              <Fade duration="800" triggerOnce={true}>
+                <Slide index={0}>
+                  <ImageWithZoom
+                    src={img6}
+                    alt=""
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                  />
+                </Slide>
+                <Slide index={1}>
+                  <ImageWithZoom
+                    src={img7}
+                    alt=""
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                  />
+                </Slide>
+                <Slide index={2}>
+                  <ImageWithZoom
+                    src={img8}
+                    alt=""
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                  />
+                </Slide>
+                <Slide index={3}>
+                  <ImageWithZoom
+                    src={img9}
+                    alt=""
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                  />
+                </Slide>
+              </Fade>
             </Slider>
           </CarouselProvider>
         </div>
-        <div className="imgBigGlobal_Container">
-          <img className="imgBigGlobal imgBigGlobal1" src={imgbig1} alt="" />
-          <img className="imgBigGlobal" src={imgbig2} alt="" />
-        </div>
+        <Fade duration="3000">
+          <div className="imgBigGlobal_Container">
+            <img className="imgBigGlobal imgBigGlobal1" src={imgbig1} alt="" />
+            <img className="imgBigGlobal" src={imgbig2} alt="" />
+          </div>
+        </Fade>
         <h3 className="global_Container_title">
           Cyberpunk Style
           <img className="iconGender" src={icon} alt="" />
         </h3>
-        <div className="imgSmallGlobal_Container">
-          <img className="imgSmallGlobal imgSmallGlobal1" src={lady1} alt="" />
-          <img className="imgSmallGlobal imgSmallGlobal1" src={lady2} alt="" />
-          <img className="imgSmallGlobal" src={lady3} alt="" />
-          <img className="imgSmallGlobal imgSmallGlobal2" src={lady4} alt="" />
-        </div>
+        <Flip direction="up" duration="1000">
+          <div className="imgSmallGlobal_Container">
+            <img
+              className="imgSmallGlobal imgSmallGlobal1"
+              src={lady1}
+              alt=""
+            />
+            <img
+              className="imgSmallGlobal imgSmallGlobal1"
+              src={lady2}
+              alt=""
+            />
+            <img className="imgSmallGlobal" src={lady3} alt="" />
+            <img
+              className="imgSmallGlobal imgSmallGlobal2"
+              src={lady4}
+              alt=""
+            />
+          </div>
+        </Flip>
         <NavLink className="backToIndex" to="../ai-generation">
           <p>Retour</p>
         </NavLink>

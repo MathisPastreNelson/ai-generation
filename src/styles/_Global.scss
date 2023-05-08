@@ -7,6 +7,7 @@
   background-color: $colorbg1;
   width: 80%;
   margin: 1rem 0;
+  overflow: hidden;
 }
 
 .global_Container_title {
@@ -78,8 +79,21 @@
   text-decoration: none;
   margin: 1rem 0;
   padding: 1rem 2rem;
-  background-color: $colorbg1;
-  border-radius: 10px;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8015581232492998) 0%,
+    rgba(255, 183, 210, 0.5270483193277311) 50%,
+    rgba(0, 0, 0, 0.8435749299719888) 100%
+  );
+  text-align: center;
+  transition: 200ms ease-in;
+  border-radius: 15px;
+  border: 2px solid rgba(0, 0, 0, 0.672);
+}
+
+.backToIndex:hover {
+  filter: brightness(1.5);
+  color: rgba(192, 251, 103, 0.674);
 }
 
 @media screen and (max-width: 874px) {
