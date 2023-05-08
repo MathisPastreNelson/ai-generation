@@ -1,12 +1,21 @@
-import React from "react";
-// import Header from "../components/Header";
+import React, { useState, useEffect } from "react";
 import Main from "../components/Main";
-// import Footer from "../components/Footer";
+import Loader from "../components/Loader";
 
 export default function Home() {
-  return (
-    <div>
-      <Main />
-    </div>
-  );
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    const handleLoad = () => {
+      setLoaded(true);
+    };
+
+    window.addEventListener("load", handleLoad);
+
+    return () => {
+      window.removeEventListener("load", handleLoad);
+    };
+  }, []);
+
+  return <div>{loaded ? <Main /> : <Loader />}</div>;
 }
