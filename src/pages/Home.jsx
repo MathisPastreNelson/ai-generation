@@ -3,19 +3,22 @@ import Main from "../components/Main";
 import Loader from "../components/Loader";
 
 export default function Home() {
-  const [loaded, setLoaded] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [delayed, setDelayed] = useState(false);
 
   useEffect(() => {
-    const handleLoad = () => {
-      setLoaded(true);
-    };
+    const timeout = setTimeout(() => {
+      setDelayed(true);
+    }, 2000);
 
-    window.addEventListener("load", handleLoad);
-
-    return () => {
-      window.removeEventListener("load", handleLoad);
-    };
+    return () => clearTimeout(timeout);
   }, []);
 
-  return <div>{loaded ? <Main /> : <Loader />}</div>;
+  useEffect(() => {
+    if (loading && delayed) {
+      setLoading(false);
+    }
+  }, [loading, delayed]);
+
+  return <div>{loading ? <Loader /> : <Main />}</div>;
 }
