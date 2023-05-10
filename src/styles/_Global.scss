@@ -88,11 +88,12 @@
   text-align: center;
   transition: 200ms ease-in;
   border-radius: 15px;
+  filter: brightness(0.7);
   border: 2px solid rgba(0, 0, 0, 0.672);
 }
 
 .backToIndex:hover {
-  filter: brightness(1.5);
+  filter: brightness(1.2);
   color: rgba(192, 251, 103, 0.674);
 }
 
