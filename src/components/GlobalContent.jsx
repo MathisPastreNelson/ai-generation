@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import {
   CarouselProvider,
@@ -10,7 +10,7 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 
 import { Flip, Fade } from "react-awesome-reveal";
 
-import background from "../assets/videos/GirlInCity.mp4";
+import background from "../assets/videos/cityBackground.mp4";
 import Header from "./Header";
 import Footer from "./Footer";
 
@@ -48,6 +48,9 @@ export default function GlobalContent() {
   const handlePauseClick = () => {
     setIsPaused(!isPaused);
   };
+
+  /*Pour la loop du background*/
+  const videoRef = useRef(null);
 
   return (
     <div className="main">

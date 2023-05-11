@@ -94,6 +94,7 @@ header {
   -o-object-fit: cover;
      object-fit: cover;
   background-position: 50% 0%;
+  filter: blur(7px);
 }
 
 .main_content {
@@ -177,6 +178,7 @@ header {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.408);
   width: 80%;
+  max-width: 1000px;
   margin: 1rem 0;
   overflow: hidden;
 }
@@ -304,6 +306,7 @@ header {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.408);
   width: 80%;
+  max-width: 1000px;
   margin: 1rem 0;
 }
 

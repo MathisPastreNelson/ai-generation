@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-import background from "../assets/videos/TourDeLaVille.mp4";
+import background from "../assets/videos/cityBackground2.mp4";
 import Header from "./Header";
 import Footer from "./Footer";
 
