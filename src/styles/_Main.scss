@@ -33,8 +33,19 @@
 }
 
 .title_main_content {
-  font-size: 22px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: $colorbg1;
+  width: 100%;
+  padding: 1rem 0;
+}
+.title_main {
+  width: 80%;
   color: $textColor;
+  font-size: 17px;
+  font-family: "Audiowide", cursive;
 }
 
 .ImgContent {
@@ -91,5 +102,8 @@
 
   .image_title {
     font-size: 15px;
+  }
+  .title_main {
+    font-size: 14px;
   }
 }

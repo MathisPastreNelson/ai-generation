@@ -20,7 +20,13 @@ export default function Main() {
 
       <div className="main_content">
         <Slide duration="500">
-          <p className="title_main_content">Tomorrow is Today</p>
+          <div className="title_main_content">
+            <p className="title_main">
+              Bienvenue, où tout ce que vous voyez a été créé par Stable
+              Diffusion, une intelligence artificielle sophistiquée spécialisée
+              dans la génération de dessins.
+            </p>
+          </div>
         </Slide>
         <div className="ImgContent">
           <Fade duration="1500" cascade>
