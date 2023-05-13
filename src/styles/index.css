@@ -268,7 +268,6 @@ header {
 
 .backToIndex {
   color: rgba(255, 255, 255, 0.948);
-  text-decoration: none;
   margin: 1rem 0;
   padding: 1rem 2rem;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.8015581232) 0%, rgba(255, 183, 210, 0.5270483193) 50%, rgba(0, 0, 0, 0.84357493) 100%);
