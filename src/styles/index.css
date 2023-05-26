@@ -337,6 +337,13 @@ header {
   height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
+  filter: grayscale(50%) brightness(70%); /* Apply the tint effect */
+  transition: 400ms ease-in;
+  cursor: pointer;
+}
+
+.videoStreet:hover {
+  filter: none; /* Remove the tint effect on hover */
 }
 
 .videoStreet1 {

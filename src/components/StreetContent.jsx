@@ -48,7 +48,6 @@ export default function StreetContent() {
             <video
               className="videoStreet videoStreet1"
               ref={(el) => (videoRefs.current[0] = el)}
-              
               muted
               loop
               onClick={() => handleVideoToggle(0)}
@@ -76,7 +75,6 @@ export default function StreetContent() {
             <video
               className="videoStreet videoStreet2"
               ref={(el) => (videoRefs.current[3] = el)}
-              
               muted
               loop
               onClick={() => handleVideoToggle(3)}
