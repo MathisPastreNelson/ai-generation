@@ -21,6 +21,10 @@ h6 {
   font-family: "Syncopate", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .loader-container {
   display: flex;
   justify-content: center;
@@ -282,6 +286,8 @@ header {
 .backToIndex:hover {
   filter: brightness(1.2);
   color: rgba(192, 251, 103, 0.674);
+  padding: 1rem 3rem;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 874px) {
