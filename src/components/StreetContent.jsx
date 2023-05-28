@@ -42,7 +42,7 @@ export default function StreetContent() {
       </video>
 
       <div className="street_content">
-        <h3 className="global_Container_title">Timelapse Generated</h3>
+        <h3 className="global_Container_title">Videos Generated</h3>
         <Slide duration="1000">
           <div className="videoStreet_Box">
             <video
